@@ -13,3 +13,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+  height: 100dvh;
+}
