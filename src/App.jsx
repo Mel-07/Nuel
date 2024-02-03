@@ -1,13 +1,21 @@
 import gsap from "gsap"; 
 import { useGSAP } from "@gsap/react";
+import Header from "./components/header/Header";
+import Layout from "./Layout";
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+
+const routers = createBrowserRouter([
+  {
+    element:<Layout/>,
+    path:'/'
+  }
+])
 
 function App() {
 
   return (
     <>
-      <div className=" h-full ">
-
-      </div>
+    <RouterProvider router={routers} />
     </>
   )
 }

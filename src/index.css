@@ -1,13 +1,163 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'BespokeStencil-Variable';
+  src: url('./assets/fonts/BespokeStencil-Variable.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Variable.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Variable.ttf') format('truetype');
+       font-weight: 300 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 800.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 800.0)
+
+*/
+
+@font-face {
+  font-family: 'BespokeStencil-VariableItalic';
+  src: url('./assets/fonts/BespokeStencil-VariableItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-VariableItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-VariableItalic.ttf') format('truetype');
+       font-weight: 300 800;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Light';
+  src: url('./assets/fonts/BespokeStencil-Light.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Light.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-LightItalic';
+  src: url('./assets/fonts/BespokeStencil-LightItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-LightItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-LightItalic.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Regular';
+  src: url('./assets/fonts/BespokeStencil-Regular.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Regular.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Italic';
+  src: url('./assets/fonts/BespokeStencil-Italic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Italic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Italic.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Medium';
+  src: url('./assets/fonts/BespokeStencil-Medium.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Medium.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-MediumItalic';
+  src: url('./assets/fonts/BespokeStencil-MediumItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-MediumItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-MediumItalic.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Bold';
+  src: url('./assets/fonts/BespokeStencil-Bold.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Bold.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-BoldItalic';
+  src: url('./assets/fonts/BespokeStencil-BoldItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-BoldItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-BoldItalic.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-Extrabold';
+  src: url('./assets/fonts/BespokeStencil-Extrabold.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-Extrabold.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-Extrabold.ttf') format('truetype');
+       font-weight: 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BespokeStencil-ExtraboldItalic';
+  src: url('./assets/fonts/BespokeStencil-ExtraboldItalic.woff2') format('woff2'),
+       url('./assets/fonts/BespokeStencil-ExtraboldItalic.woff') format('woff'),
+       url('./assets/fonts/BespokeStencil-ExtraboldItalic.ttf') format('truetype');
+       font-weight: 800;
+       font-display: swap;
+       font-style: italic;
+}
+
+@font-face {
+  font-family: 'Khand-Bold';
+  src: url('./assets/fonts/Khand-Bold.woff') format('woff'),
+       url('./assets/fonts/Khand-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Khand-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,4 +168,14 @@ body{
   margin: unset;
   box-sizing: border-box;
   height: 100dvh;
+  position: relative;
 }
+
+.fact-parent:hover > .fact-child {
+  visibility: visible;
+  transform: translateX(-200%);
+}
+
+.about{
+}
+
