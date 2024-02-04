@@ -179,3 +179,7 @@ body{
 .about{
 }
 
+.marquee-parent:hover > .marquee-child{
+  transform: translateY(0);
+
+}

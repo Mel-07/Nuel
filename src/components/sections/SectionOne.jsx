@@ -52,9 +52,9 @@ function SectionOne() {
   },[])
 
   return (
-    <div className="h-screen panel flex min-w-[100%] backdrop-blur-[1px]  bg-[#000000] ">
+    <div className="h-[100dvh] panel flex min-w-[100%] backdrop-blur-[1px]  bg-[#000000] ">
         
-      <div className="mx-auto   p-2 self-end sm:self-center ">
+      <div className="mx-auto   p-2 mt-[.8rem] sm:mt-[unset] self-center ">
         <div ref={containerRef} className=" relative   max-w-[100%] text-black ">
           {/* image container */}
         <div className=" absolute top-[-2rem] md:top-[-5rem] lg:top-[-8rem]  !z-[0]  right-[0] mx-auto  ">

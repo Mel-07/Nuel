@@ -32,6 +32,7 @@ useEffect(()=>{
 useGSAP(()=>{
     const panels = gsap.utils.toArray(".panel");
     const text = gsap.utils.toArray(".font-end-text");
+    const marqueeParent = gsap.utils.toArray(".marquee-parent");
 
 
     
@@ -46,23 +47,26 @@ useGSAP(()=>{
           end: () => '+=' + panelRef.current.offsetWidth
         }
       });
-      
-
+      const timeLine = gsap.timeline({})
       gsap.set(text,{
         y:10
       })
-      gsap.to(text, {
+      timeLine .to(text, {
         scrollTrigger:{
             trigger:'.panel-two',
             scrub:1,
             start: pageWidth < 640 ?"20%  top" : "50%  center",
-            end:pageWidth<640 ? ()=> '+=' + 50 :'97%'
+            end:pageWidth<640 ? ()=> '+=' + 60 :'97%'
         },
         color:'#e7e7e6',
         stagger:1,
         y:0,
         ease:'circ.inOut'
+      }).to(marqueeParent,{
+        backgroundColor:'#e7e7e6',
+        stagger:1,
       });
+
  
 
       Observer.create({
@@ -85,21 +89,12 @@ useGSAP(()=>{
             })
         }
     })
-    Observer.create({
-        target:'.second-panel-div',
-        type:'scroll,touch,pointer',
-        onPress:(self)=>{
-            gsap.to('.second-panel-div',{
-                height:'100%'
-            })
-        },
 
-    })
 
     Observer.create({
         target:'.name',
         type:'scroll,touch,pointer',
-        onHover:(self)=>{
+        onHover:()=>{
             gsap.to('.name',{
                 text:` But my friends call me Nuel &#x2764;&#xfe0f;`,
                 background:'#000',
@@ -121,7 +116,7 @@ useGSAP(()=>{
 
 
   return (
-    <div  className="h-screen  relative">
+    <div  className="h-[100dvh]  relative">
       <Header/>
       <div ref={panelRef}  className=" flex overflow-hidden">
         <SectionOne/>
