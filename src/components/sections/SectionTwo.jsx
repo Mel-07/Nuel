@@ -3,11 +3,33 @@ import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import Marquee from "react-fast-marquee";
 import SlideCard from '../cards/SlideCard';
+import cryp from '../../assets/image/crypitez.png'
 
 function SectionTwo() {
 
   const panelTwoRef = useRef()
-  const textArray = ['View','View','View']
+  const textArray = [{
+    image:cryp,
+    path:'https://chimerical-sprite-567e44.netlify.app',
+    btn: 'View'
+  },
+  {
+    image:cryp,
+    path:'https://chimerical-sprite-567e44.netlify.app',
+    btn: 'View'
+  },
+  {
+    image:cryp,
+    path:'https://chimerical-sprite-567e44.netlify.app',
+    btn: 'View'
+  },
+  {
+    image:cryp,
+    path:'https://chimerical-sprite-567e44.netlify.app',
+    btn: 'View'
+  },
+
+]
   useGSAP(()=>{
 
 
@@ -26,7 +48,7 @@ function SectionTwo() {
           <div className='flex justify-around mx-[1rem]  gap-[2rem]'>
             {
               textArray.map((text,index)=>(
-                <SlideCard valueNumber={index} key={index} view={text} />
+                <SlideCard valueNumber={index} path={text.path} key={index} view={text.btn} image={text.image} />
               ))
             }
           </div>

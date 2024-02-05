@@ -9,7 +9,7 @@ function Header() {
       <div className="max-w-[90rem] mx-[auto] py-[.1rem] px-[.7rem] flex items-center justify-between " >
 
         <div className="flex items-center gap-[1rem] ml-auto ">
-        <p className=" font-6 text-[2rem]" >Nuel.</p>
+        <p className=" font-5 text-[2rem]" >Nuel.</p>
         <ul className="flex gap-[.5rem]   " >
           <li>
             <Link><FaGithub className="w-[1.6rem] h-[1.6rem] p-[.1rem]" /></Link>

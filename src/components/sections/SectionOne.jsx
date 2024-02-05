@@ -72,7 +72,7 @@ function SectionOne() {
 
 
         <div className='bg-[#f1f1f1] max-w-[70rem] mx-auto transition duration-500 p-2 rounded-sm '>
-        <h1 className=" name sm:text-[2rem] text-[1.1rem]  font-8 font-bold pb-[.1rem] border-b-[.1rem] my-[1rem] border-blue-400 cursor-pointer select-none "> Hi! I'm OKOCHA EMMANUEL &#x2764;&#xfe0f;</h1>
+        <h1 className=" name sm:text-[2rem] text-[1.1rem]  font-5 font-bold pb-[.1rem] border-b-[.1rem] my-[1rem] border-blue-400 cursor-pointer select-none "> Hi! I'm OKOCHA EMMANUEL &#x2764;&#xfe0f;</h1>
           <div className='font-3 z-[2] p-2  text-[.7rem] sm:text-[.85rem] md:text-[.95rem] lg:text-[1.2rem]'>
             <p className='about leading-[2rem] '><span className=' front-end font-5 text-[1.1rem] md:text-[2rem] cursor-pointer select-none '>A  Front End Developer  </span> 🥑  focused on building websites & Web Apps, that Help Businesses  solve user
              problems.<br/> I currently build web apps In the web2 space as A freelancer, where I work to provide client with A clean & interactive interface. <br /> I also love to fun website with animations, I'm currently
