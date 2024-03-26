@@ -103,7 +103,7 @@ useGSAP(()=>{
         },
         onHoverEnd:()=>{
             gsap.to('.name',{
-                text:`Hi! I'm OKOCHA EMMANUEL &#x2764;&#xfe0f;`,
+                text:`Hi! I'm OKOCHA EMEKA CHINONSO EMMANUEL &#x2764;&#xfe0f;`,
                 background:'#f1f1f1',
                 color:'#000' 
             })
