@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import Nuel from '../../assets/image/Nuel-4.JPG'
+import Nuel from '../../assets/image/Nuel-4.jpg'
 
 import { useEffect, useState,useRef } from 'react'
 
