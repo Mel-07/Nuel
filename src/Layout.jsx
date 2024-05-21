@@ -72,7 +72,7 @@ useGSAP(()=>{
       Observer.create({
         target:'.front-end',
         type:'scroll,touch,pointer',
-        onHover:(self)=>{
+        onHover:()=>{
             gsap.to('.front-end',{
                
                 text:'Looking into the Web3 space and Nodejs',

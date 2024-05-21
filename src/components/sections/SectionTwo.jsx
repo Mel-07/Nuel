@@ -1,9 +1,11 @@
-import gsap from 'gsap'
+
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import Marquee from "react-fast-marquee";
 import SlideCard from '../cards/SlideCard';
 import cryp from '../../assets/image/crypitez.png'
+import ecommerce from '../../assets/image/E-commerce.png'
+import space_web from '../../assets/image/Space tourism.png'
 
 function SectionTwo() {
 
@@ -14,18 +16,13 @@ function SectionTwo() {
     btn: 'View'
   },
   {
-    image:cryp,
-    path:'https://chimerical-sprite-567e44.netlify.app',
+    image:ecommerce,
+    path:'https://commerce-front-end.vercel.app/',
     btn: 'View'
   },
   {
-    image:cryp,
-    path:'https://chimerical-sprite-567e44.netlify.app',
-    btn: 'View'
-  },
-  {
-    image:cryp,
-    path:'https://chimerical-sprite-567e44.netlify.app',
+    image:space_web,
+    path:'https://space-web-site-seven.vercel.app/',
     btn: 'View'
   },
 
