@@ -11,7 +11,7 @@ function SectionOne() {
   const [time,setCurrentTime] = useState()
 
 
- const {} = useGSAP(()=>{
+  useGSAP(()=>{
 
     gsap.set('.img-container',{
       x: '100vw',
